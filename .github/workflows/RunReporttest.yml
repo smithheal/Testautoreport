@@ -1,0 +1,13 @@
+name: Runreport browser launch
+
+on:
+  push:
+      branches: ["master"]
+  workflow_dispatch:
+jobs:
+    genreport:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test command
+        run: 'pwd'
+    
